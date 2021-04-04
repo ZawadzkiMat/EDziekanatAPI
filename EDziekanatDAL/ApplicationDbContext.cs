@@ -1,10 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using EDziekanatDAL.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace EDziekanatDAL
 {
-    class ApplicationDbContext
+    public class ApplicationDbContext : DbContext
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {}
+
+        public DbSet<Person> Persons { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

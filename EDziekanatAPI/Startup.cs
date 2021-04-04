@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using EDziekanatDAL;
 
 namespace EDziekanatAPI
 {
@@ -26,6 +28,15 @@ namespace EDziekanatAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            #region DbContext
+
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("EDziekanatContext")));
+
+            #endregion
+
+            services.AddSingleton<IConfiguration>(provider => Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
