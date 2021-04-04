@@ -1,0 +1,2 @@
+# EDziekanatAPI
+Zarządzanie projektami informatycznymi
