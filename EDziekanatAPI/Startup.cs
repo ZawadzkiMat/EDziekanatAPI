@@ -29,6 +29,17 @@ namespace EDziekanatAPI
         {
             services.AddControllers();
 
+            services.AddSwaggerGen(options =>
+            {
+                options.SwaggerDoc("v1",
+                    new Microsoft.OpenApi.Models.OpenApiInfo
+                    {
+                        Title = "Swagger API Demo",
+                        Description = "Test API",
+                        Version = "v1"
+                    });
+            });
+
             #region DbContext
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -47,7 +58,14 @@ namespace EDziekanatAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSwagger();
+
             app.UseHttpsRedirection();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Swagger API Demo");
+            });
 
             app.UseRouting();
 
