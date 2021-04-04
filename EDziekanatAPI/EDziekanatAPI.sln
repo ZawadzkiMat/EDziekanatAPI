@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDziekanatAPI", "EDziekanatAPI.csproj", "{70CD1089-F45A-486C-8E28-06D62305C202}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDziekanatDAL", "..\EDziekanatDAL\EDziekanatDAL.csproj", "{C06DF08D-DE16-42AB-A8BF-C29CC0A66B54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70CD1089-F45A-486C-8E28-06D62305C202}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70CD1089-F45A-486C-8E28-06D62305C202}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70CD1089-F45A-486C-8E28-06D62305C202}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70CD1089-F45A-486C-8E28-06D62305C202}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06DF08D-DE16-42AB-A8BF-C29CC0A66B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06DF08D-DE16-42AB-A8BF-C29CC0A66B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06DF08D-DE16-42AB-A8BF-C29CC0A66B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06DF08D-DE16-42AB-A8BF-C29CC0A66B54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AA0D3B6-6433-44DF-8EFE-F3F9D1817796}
+	EndGlobalSection
+EndGlobal
